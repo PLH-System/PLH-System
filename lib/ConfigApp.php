@@ -7,9 +7,9 @@
 	Class ConfigApp {
 		
 		private $db_host = "127.0.0.1";
-		private $db_user = "root";
-		private $db_pass = "";
-		private $db_name = "app_oop";
+		private $db_user = "UNAME_SECRET";
+		private $db_pass = "PASSWD_SECRET";
+		private $db_name = "DB_SECRET";
 		
 		private $con 		= false;    // Cek apakah database terkoneksi
 		private $result 	= array();  // Menampung hasil query
@@ -263,10 +263,6 @@
 		 echo $no.". ".$r['logs']. " || Time Logs: ". $r['waktu']."<br />";
 	 }
 	 
-	$uname  = "root";  		 // $_POST['uname]
-	$passwd = MD5('000000'); // $_POST[passwd]
-	$rname  = "root";        // $_POST[rname]
-	
 	$data = array(
 				'uname'  => $uname,
 				'passwd' => $passwd,
